@@ -1,21 +1,23 @@
-# skud
+# SKUD Admin panel
 
-> A Vue.js project
+> SPA Vue.js | Панель администрирования
 
-## Build Setup
+### Основные команды для запуска:
 
 ``` bash
-# install dependencies
+# Установка зависимостей
 npm install
 
-# serve with hot reload at localhost:8080
+# Запуск тестового сервера по адресу localhost:3000
 npm run dev
 
-# build for production with minification
+# Сборка приложения на Production 
 npm run build
 
-# build for production and view the bundle analyzer report
+# Сборка приложения на Production с генерацией отчета
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+---
+
+СКУД "Выдача ключей" 2018г.
