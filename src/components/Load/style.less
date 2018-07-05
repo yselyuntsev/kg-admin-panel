@@ -1,0 +1,45 @@
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.r-load {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 15rem;
+  background: rgba(249, 249, 249, .92);
+  top: 0;
+  width: calc(100% - 15rem);
+  height: 100vh;
+  z-index: 228;
+
+  &__loader {
+    margin: 1rem auto;
+    position: relative;
+    border-top: .25rem solid rgba(9, 63, 156, 2);
+    border-right: .25rem solid rgba(9, 63, 156, .2);
+    border-bottom: .25rem solid rgba(9, 63, 156, .2);
+    border-left: .25rem solid rgba(9, 63, 156, .2);
+    transform: translateZ(0);
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    animation: loader 1.64s infinite ease;
+  }
+}
+
+.load-leave-active {
+  transition: opacity .32s;
+}
+.load-leave-to {
+  opacity: 0;
+}

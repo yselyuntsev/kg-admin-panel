@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .r-noscript {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        height: 100vh;
+        box-sizing: border-box;
+        background-color: #0747A6;
+      }
+      
+      .r-noscript__title {
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .r-noscript__description {
+        font-size: .875rem;
+        color: #fff;
+        opacity: .8;
+      }
+    </style>
+    <title>СКУД "Выдача ключей"</title>
+  </head>
+
+  <body>
+    <noscript>
+      <div class="r-noscript">
+        <h2 class="r-noscript__title">Ошибка загрузки приложения :(</h2>
+        <p class="r-noscript__description">Извините, для корректной работы приложения необходимо включить выполнение JavaScript на странице</p>
+      </div>
+    </noscript>
+
+    <div id="app"></div>
+  </body>
+</html>

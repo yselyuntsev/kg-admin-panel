@@ -1,0 +1,23 @@
+@hover-color: #08367C;
+
+.r-nav__link {
+  display: flex;
+  height: 2.5rem;
+  font-size: .875rem;
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  align-items: center;
+  padding: 0 2rem;
+  transition: .16s all ease-in-out;
+
+  &:hover {
+    background-color: @hover-color;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  &--active {
+    background-color: @hover-color;
+    color: #FFFFFF;
+  }
+}

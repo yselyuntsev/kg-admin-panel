@@ -1,0 +1,45 @@
+.grid-sizes (@n, @size, @i: 1) when (@i <= @n) {
+  &.@{size}-@{i}of@{n} {
+    flex: 0 0 percentage(@i / @n);
+  }
+  .grid-sizes(@n, @size, (@i + 1));
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--sb {
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex: 1;
+    padding: 0.5rem;
+
+    &--left {
+      flex: 0 0 auto;
+      display: flex;
+      padding: 0;
+      align-items: center;
+    }
+
+    &--right {
+      flex: 0 0 auto;
+    }
+
+    .grid-sizes(6, size)
+  }
+}
+
+@media (min-width: 24em) {
+  .grid__column {  
+    .grid-sizes(6, small)
+  }
+}
+
+@media (min-width: 48em) {
+  .grid__column {  
+    .grid-sizes(6, large)
+  }
+}
